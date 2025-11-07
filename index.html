@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SUPER SENAI FORCA</title>
+  <style>
+    html,body { height:100%; margin:0; display:flex; align-items:center; justify-content:center; background:#222; }
+    canvas { background:black; display:block; }
+  </style>
+</head>
+<body>
+  <img id="menu-img" src="imagens/menu.jpg">
+  <canvas id="screen" width="1280" height="720" aria-label="Black canvas"></canvas>
+
+  <script src="utils.js"></script>
+  <script src="play_forca.cpp.js"></script>
+  <script>
+    document.getElementById('menu-img').remove()
+
+    const canvas = document.getElementById('screen');
+    const ctx = canvas.getContext('2d');
+    clrscr();
+
+    window.onload = async function() {
+        await main();
+        clrscr();
+
+        while(true) {
+            gotoxy(0,1);
+            printf("C:\\>   ");
+            await delay(500)
+            printf("C:\\>|   ");
+            await delay(500)
+        }
+    }
+
+  </script>
+</body>
+</html>
