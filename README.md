@@ -1,5 +1,9 @@
 # SUPER SENAI FORCA
 
+<!-- Add link to site -->
+[JOGUE AQUI](https://lucolivi.github.io/super-senai-forca/)
+
+
 Super Senai Forca é o tradicional jogo da forca, onde você deve tentar adivinhar as letras que formam uma palavra qualquer e caso erre algumas vezes, você será enforcado.
 
 Após a apresentação do jogo, você terá quatro opções:
